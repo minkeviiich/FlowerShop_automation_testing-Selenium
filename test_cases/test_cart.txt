@@ -1,0 +1,9 @@
+---------------test_cart---------------
+ID: CP-2
+Author (Created by author): Alexander Minkevich
+Name: Checking the correctness of adding an item to сart.
+Prerequisites: The main page of the site https://lapaflowers.by/catalog/vse-bukety/ is open.
+Steps:
+   Step #1: In the catalog select the item with the name - "BOOKET 'GOOD NEWS" and click on the button - "Buy".
+   Step #2: Go to https://lapaflowers.by/personal/cart/ and verify that the product has been added.
+Expected result: After completing the work the item "BOOKET 'GOOD NEWS" should be added to the "Cart" section.

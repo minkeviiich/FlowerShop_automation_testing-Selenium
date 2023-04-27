@@ -1,0 +1,11 @@
+---------------test_parameter_selection---------------
+ID: CP-4
+Author (Created by author): Alexander Minkevich
+Name: Correctness check - "Selecting parameters", minimum and maximum price.
+Prerequisites: The home page of https://lapaflowers.by/ is open.
+Steps:
+   Step #1: In the top left menu of the site, open the link - "Bouquets".
+   Step #2: In the catalog that opens, click on the link - "All Bouquets".
+   Step #3: In the lower part of the site in the window - "Check parameters" specify the minimum and maximum cost of bouquets (60-130 rubles).
+   Step #4: Click on button - "Show".
+Expected result: The cost of bouquets should be in the acceptable range.

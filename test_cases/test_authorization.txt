@@ -1,0 +1,10 @@
+---------------test_authorization---------------
+ID: CP-1
+Author (Created by): Aliaksandr Minkevich
+Name: Checking correctness of authorization on the site
+Prerequisite: The home page of the site https://lapaflowers.by/ is open
+Steps:
+   Step #1: In the top right menu of the site, open the link - "Login".
+   Step #2: In the opened window fill in the fields - "Login" and "Password" (Login - Ivann, password - 12345678).
+   Step #3: Press the "Login" button.
+Expected result: After completing the work the page https://lapaflowers.by/personal/ - personal account should open.

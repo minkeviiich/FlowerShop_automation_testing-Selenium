@@ -1,0 +1,11 @@
+---------------test_catalog_flowers---------------
+ID: CP-3
+Author (Created by author): Alexander Minkevich
+Name: Checking the correctness of the catalog - "Bouquets"
+Prerequisites: The main page of the site https://lapaflowers.by/ is open.
+Steps:
+   Step #1: In the top left menu of the site open the link - "Bouquets.
+   Step #2: In the catalog that opens click on the link - "All Bouquets".
+   Step #3: Check the correctness of the information.
+   Step #3:Check all remaining links in this directory.
+Expected result: All links in the "Bouquets" directory should work correctly and contain the correct information.
