@@ -1,4 +1,3 @@
-import allure
 from pages.page_cart import FormPageCart
 from configuration import SERVICE_URL
 from enums.global_exception import GlobalErrorMessages
@@ -15,3 +14,4 @@ class TestFormPage:
         form_page.open()
         result = form_page.result_cart()
         assert result == "БУКЕТ 'GOOD NEWS'", GlobalErrorMessages.WRONG_STATUS
+

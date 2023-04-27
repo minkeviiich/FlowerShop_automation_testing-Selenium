@@ -11,8 +11,12 @@ class FormPageLocators:
     PERSONAL_CABINET_ERROR = (By.XPATH, "//div[@class='alert alert-danger']")
     # test_cart
     FLOWERS = (By.XPATH, "//div[@id='bx_3966226736_981']")
+    FLOWERS_TWO = (By.XPATH, "//div[@id='bx_3966226736_587']")
     FLOWERS_CLICK = (By.XPATH, "//a[@href='/catalog/vse-bukety/?action=ADD2BASKET&id=981']")
+    FLOWERS_CLICK_SEVERAL = (By.XPATH, "//a[@href='/catalog/vse-bukety/?action=ADD2BASKET&id=587']")
+    FLOWERS_SEVERAL_CLICK = (By.XPATH, "//a[@class='plus']")
     BASKET_TEXT = (By.XPATH, "//span[@data-entity='basket-item-name']")
+    BASKET_TEXT_NUMBER = (By.XPATH, "//td[@class='basket-items-list-item-price']")
     # test_catalog_flowers
     FLOWERS_CATALOG = (By.XPATH, "//ul[@class='head_menu']//li[2]")
     FLOWERS_CATALOG_CLICK = (By.XPATH, "//ul[@class='head_menu']//li//a")
