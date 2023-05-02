@@ -135,3 +135,6 @@ dmypy.json
 results/
 /results/
 results
+
+#My files
+allureress/

@@ -9,6 +9,8 @@ class FormPageLocators:
     ENTER = (By.XPATH, "//input[@name='AUTH_ACTION']")
     PERSONAL_CABINET = (By.XPATH, "//a[@class='lk_user_bt exit']")
     PERSONAL_CABINET_ERROR = (By.XPATH, "//div[@class='alert alert-danger']")
+    FORGOT_PASSWORD = (By.XPATH, "//a[@href='/auth/?forgot_password=yes']")
+    RESULT_FORGOT_PASSWORD = (By.XPATH, "//div[@class='standart_width']//h1")
     # test_cart
     FLOWERS = (By.XPATH, "//div[@id='bx_3966226736_981']")
     FLOWERS_TWO = (By.XPATH, "//div[@id='bx_3966226736_587']")
@@ -41,8 +43,7 @@ class FormPageLocators:
     PRICE_MIN = (By.XPATH, "//input[@id='arrFilter_P1_MIN']")
     PRICE_MAX = (By.XPATH, "//input[@id='arrFilter_P1_MAX']")
     PRICE_ENTER = (By.XPATH, "//div[@id='modef']//a")
-    # test_catalog_compositions
-    COMPOSITIONS_CATALOG = (By.XPATH, "//ul[@class='mob_head_menu']/li[2]//a")
-    COMPOSITIONS_CATALOG_CLICK = (By.XPATH, "//ul[@class='mob_head_menu']/li[2]//a")
+    # test_sorting
+    SORTING_CLICK = (By.XPATH, "//span[@class='sort_list js_sort_list']//a[1]")
 
 

@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait as Wait
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as ec
+from configuration import CAPTURE_PATH
 
 
 class BasePage:
@@ -16,3 +17,6 @@ class BasePage:
 
     def element_is_not_visible(self, locator):
         return ActionChains(self.driver).move_to_element(locator).perform()
+
+    def check_sort(self, array):
+        return all([x >= y for x, y in zip(array, array[1:])])

@@ -4,8 +4,11 @@ from configuration import SERVICE_URL
 from enums.global_exception import GlobalErrorMessages
 
 
+@allure.suite('Elements #1')
+@allure.feature('Authorization')
 class TestFormPage:
 
+    @allure.title('Check Autorization')
     def test_authorization(self, driver):
         form_page = FormPageAuthorization(driver, SERVICE_URL)
         form_page.open()
