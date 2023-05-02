@@ -1,10 +1,14 @@
 from pages.page_cart import FormPageCart
 from configuration import SERVICE_URL
 from enums.global_exception import GlobalErrorMessages
+import allure
 
 
+@allure.suite('Elements #3')
+@allure.feature('Cart')
 class TestFormPage:
 
+    @allure.title('Check Cart')
     def test_cart(self, driver):
         form_page = FormPageCart(driver, SERVICE_URL + 'catalog/vse-bukety/')
         form_page.open()

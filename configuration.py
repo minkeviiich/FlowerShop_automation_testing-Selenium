@@ -1,3 +1,4 @@
+CAPTURE_PATH = '/screenshot'
 SERVICE_URL = 'https://lapaflowers.by/'
 USER_LOGIN = 'Ivann'
 PASSWORD = 'SASHA12345'

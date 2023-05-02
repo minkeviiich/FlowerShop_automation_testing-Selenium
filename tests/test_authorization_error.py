@@ -1,10 +1,14 @@
 from pages.page_authorization import FormPageAuthorization
 from configuration import SERVICE_URL
 from enums.global_exception import GlobalErrorMessages
+import allure
 
 
+@allure.suite('Elements #2')
+@allure.feature('Authorization Error')
 class TestFormPage:
 
+    @allure.title('Check Autorization Errorpassword')
     def test_authorization_errorpassword(self, driver):
         form_page = FormPageAuthorization(driver, SERVICE_URL)
         form_page.open()
@@ -12,6 +16,7 @@ class TestFormPage:
         result = form_page.result_authorization_errorpassword()
         assert result == 'Неверный логин или пароль.', GlobalErrorMessages.WRONG_STATUS
 
+    @allure.title('Check Autorization Errorname')
     def test_authorization_errorname(self, driver):
         form_page = FormPageAuthorization(driver, SERVICE_URL)
         form_page.open()

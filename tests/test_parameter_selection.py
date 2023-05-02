@@ -5,10 +5,14 @@ import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
 import re
+import allure
 
 
+@allure.suite('Elements #7')
+@allure.feature('Parameter Selection')
 class TestFormPage:
 
+    @allure.title('Check Parametr Selection')
     def test_parameter_selection(self, driver):
         form_page = FormPageParametrSelection(driver, SERVICE_URL)
         form_page.open()

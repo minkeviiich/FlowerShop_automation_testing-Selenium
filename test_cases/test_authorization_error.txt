@@ -1,0 +1,10 @@
+---------------test_authorization---------------
+ID: CP-5
+Author (Created by author): Alexander Minkevich
+Name: Checking the correctness of authorization on the site (incorrect data)
+Prerequisites: Main page of the site https://lapaflowers.by/ is open.
+Steps:
+   Step #1: In the top right menu of the site, open the link - "Login".
+   Step #2: In the window that appears, fill in the fields - "Login" and "Password" (enter invalid values).
+   Step #3: Click on the "Login" button.
+Expected result: After completion the message "Incorrect login or password" should appear.
