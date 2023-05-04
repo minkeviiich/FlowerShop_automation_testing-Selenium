@@ -45,5 +45,7 @@ class FormPageLocators:
     PRICE_ENTER = (By.XPATH, "//div[@id='modef']//a")
     # test_sorting
     SORTING_CLICK = (By.XPATH, "//span[@class='sort_list js_sort_list']//a[1]")
+    POPULAR_CLICK = (By.XPATH, "//span[@class='sort_list js_sort_list']//a[2]")
+    RECOMMEND = (By.XPATH, "//div[@class='blue']")
 
 
