@@ -2,6 +2,7 @@ import allure
 from pages.page_authorization import FormPageAuthorization
 from configuration import SERVICE_URL
 from enums.global_exception import GlobalErrorMessages
+from locators.form_page_locators import FormPageLocators as Locators
 
 
 @allure.suite('Elements #1')
@@ -10,9 +11,12 @@ class TestFormPage:
 
     @allure.title('Check Autorization')
     def test_authorization(self, driver):
-        form_page = FormPageAuthorization(driver, SERVICE_URL)
-        form_page.open()
-        form_page.fill_fields_authorization()
-        result = form_page.result_authorization()
-        assert result == 'Личный кабинет', GlobalErrorMessages.WRONG_STATUS
-
+        with allure.step('Go to the login page'):
+            form_page = FormPageAuthorization(driver, SERVICE_URL)
+            form_page.open()
+        with allure.step('Filling out authorization fields'):
+            form_page.fill_fields_authorization()
+        with allure.step('Getting a result'):
+            result = form_page.get_text(Locators.PERSONAL_CABINET)
+        with allure.step('Checking Authorization'):
+            assert result == 'Личный кабинет', GlobalErrorMessages.WRONG_STATUS
