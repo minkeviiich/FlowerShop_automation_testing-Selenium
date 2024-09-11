@@ -3,13 +3,13 @@
 Этот проект предназначен для автоматизированного тестирования функциональности интернет-магазина цветов. Он включает тесты для проверки основных функций, таких как добавление товаров в корзину, оформление заказа, управление пользователями и т.д.
 
 ### Технологии
-﻿-async-generator
--fake-useragent
--pytest
--requests
--selenium
--trio-websocket
--webdriver-manager
+﻿- async-generator
+- fake-useragent
+- pytest
+- requests
+- selenium
+- trio-websocket
+- webdriver-manager
 
 
 ### Установка
