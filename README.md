@@ -4,14 +4,13 @@
 
 ### Технологии
 
-- async-generator
-- fake-useragent
-- pytest
-- requests
-- selenium
-- trio-websocket
-- webdriver-manager
-
+- async-generator (1.10)
+- fake-useragent (1.1.3)
+- pytest (7.3.1)
+- requests (2.29.0)
+- selenium (4.9.0)
+- trio-websocket (0.10.2)
+- webdriver-manager (3.8.6)
 
 ### Установка
 Клонируйте репозиторий:
