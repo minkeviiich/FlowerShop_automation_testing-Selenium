@@ -15,7 +15,7 @@
 ### Установка
 Клонируйте репозиторий:
 ```
-git clone https://github.com/minkeviiich/Lapaflowers.git
+git clone https://github.com/minkeviiich/FlowerShop_automation_testing-Selenium.git
 ```
 
 ### Перейдите в директорию проекта:
